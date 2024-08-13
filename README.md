@@ -31,16 +31,6 @@ The solution is containerized using Docker, with two primary containers:
 
 ### Clone the Repository
 
-```bash
-git clone https://github.com/your-repository-url.git
-cd your-repository-folder
-
-## Build and Start Containers
-
-Run the following command to build and start the Docker containers:
-
-```bash
-docker-compose up --build
 
 ### Verify   Setup
 To verify that everything is set up correctly:
