@@ -30,7 +30,12 @@ The solution is containerized using Docker, with two primary containers:
 ## Setup and Running the Pipeline
 
 ### Clone the Repository
+To get started, clone the repository and navigate into the project directory:
 
+```bash
+git clone https://github.com/your-repository-url.git
+cd your-repository-folder
+```
 
 ### Verify   Setup
 To verify that everything is set up correctly:
