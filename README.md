@@ -36,21 +36,34 @@ To get started, clone the repository and navigate into the project directory:
 git clone https://github.com/your-repository-url.git
 cd your-repository-folder
 ```
+### Build and Start Containers
+
+Run the following command to build and start the Docker containers:
+```
+docker-compose up --build
+```
+
 
 ### Verify   Setup
 To verify that everything is set up correctly:
 
-Check that both containers are running:
+1. Check that both containers are running:
+```
 docker ps
+```
 
+2. Access the application logs to ensure there are no errors:
 
-Access the application logs to ensure there are no errors:
+```
 docker logs data_ingestion_app
+```
 
 
-Verify that data is being inserted into the MySQL database. You can connect to the MySQL container and check the tables:
+3. Verify that data is being inserted into the MySQL database. You can connect to the MySQL container and check the tables:
+```
 docker exec -it data_ingestion_db mysql -u root -pexamplepassword user_metrics
 SHOW TABLES;
+```
 
 ## Extending the Pipeline
 
